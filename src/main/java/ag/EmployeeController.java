@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -55,6 +56,7 @@ public class EmployeeController {
 	@Path("/employee")
 	@Consumes("application/json")
 	@Produces(MediaType.APPLICATION_JSON)
+	@RolesAllowed("user")
 	public Employee updateEmployee(Employee employee){
 		
 		//System.out.println("update employee with id: " + employee.getId());
