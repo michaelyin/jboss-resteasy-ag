@@ -46,7 +46,7 @@ public class EmployeeControllerTest {
 			ResteasyClient client = new ResteasyClientBuilder().build();
             
 			WebTarget target = client
-					.target("http://localhost:8080/resteasy-test-0.1.0/rest/ag/employee");
+					.target(baseUrl + "/rest/ag/employee");
 
 			Response response = target.request().post(Entity.entity(ep1, "application/json"));
 
