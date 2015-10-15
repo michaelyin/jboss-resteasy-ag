@@ -12,4 +12,5 @@ export PATH=$M2:$PATH
     running JBoss in standalone mode
     JBoss_Home/bin/standalone.sh
     
-    then run mvn wildfly:deploy
+    then run
+    mvn wildfly:deploy
