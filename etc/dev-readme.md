@@ -29,4 +29,4 @@ contains this fragment:
                     </authentication>
                 </security-domain>
 
-Notice that the domain to use for this webapp is specified in its jboss-web.xml.
+Notice that the domain to use for this webapp is specified in its jboss-web.xml. To make the change effective, you need shutdown JBoss before you make the change.
