@@ -145,7 +145,7 @@ public class BrowserSimulator {
 	}
 	
 	/**
-	 *  used in login to the cp.163.com
+	 *  used in login
 	 */
 	private boolean sendLoginPost(String url, String postParams) throws Exception {
 
